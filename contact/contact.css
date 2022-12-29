@@ -34,7 +34,7 @@ html {
 
 body {
     text-align: justify;
-    background: url(../images/fondo.png);
+    background: url(../contact/wave-haikei.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -171,18 +171,16 @@ li {
 }
 
 .contact-form {
-    position: flex;
+    grid-area: main;
     margin: 90px;
-    margin-left: 50px;
-    /* border: 2px solid black; */
+    margin-left: 80px;
     width: 790px;
-    display: flex;
 }
 
 .inputBox {
     position: relative;
     width: 380px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     display: flex;
     flex-direction: column;
 }
@@ -231,9 +229,19 @@ li {
     border: 1px solid var(--secondaryColor);
 }
 
+.inputBox:has(input:required) span:after {
+    content: "*";
+    color: red;
+}
+
+.contact-form:has(textarea:required) label:after {
+    content: "*";
+    color: red;
+}
+
 textarea {
     width: 787px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 40px 0;
     resize: none;
     padding: 10px;
     border: 1px solid black;
@@ -244,17 +252,40 @@ textarea {
 .box{
     position: relative;
     display: grid;
+    grid: "main main sidebar";
+}
+
+.box p {
+    display: block;
+    margin-bottom: 30px;
 }
 
 .information {
     position: relative;
     display: flex;
     border-radius: 5px;
-    background-color: var(--secondaryColor);
-    width: 500px;
-    margin-bottom: 200px;
+    background-color: transparent;
+    width: 700px;
     padding: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+}
+
+#contact {
+    margin-bottom: 10px;
+}
+
+.information .info p {
+    margin: 0px 0px 0px 10px;
+}
+
+.address p {
+    margin: 0px 0px 0px 10px;
+    width: 80%;
+}
+
+.container {
+    grid-area: sidebar;
+    margin-top: 90px;
 }
 
 .map {
@@ -391,8 +422,6 @@ textarea {
 #address {
     margin-left: 10px;
     margin-top: 15px;
-    width: 85%;
-    /* border: 2px red solid; */
 }
 
 .info {
@@ -406,14 +435,12 @@ textarea {
 #mail {
     margin-left: 10px;
     margin-top: 20px;
-    /* border: 2px red solid; */
 }
 
 #phone {
     margin-left: 10px;
     width: 80%;
     text-align: left;
-    /* border: 2px red solid; */
 }
 
 .fa {
