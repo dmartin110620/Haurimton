@@ -163,7 +163,7 @@ li {
 
 
 .contact-title {
-    margin-top: 200px;
+    margin-top: 170px;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 600;
@@ -172,8 +172,7 @@ li {
 
 .contact-form {
     grid-area: main;
-    margin: 90px;
-    margin-left: 80px;
+    margin: 70px 90px 0px 80px;
     width: 790px;
 }
 
@@ -241,33 +240,29 @@ li {
 
 textarea {
     width: 787px;
-    margin: 10px 0 40px 0;
+    margin: 10px 0 30px 0;
     resize: none;
     padding: 10px;
     border: 1px solid black;
     background-color: #fff;
     border-radius: 4px;
+    font-size: 1em;
 }
 
-.box{
+.box {
     position: relative;
     display: grid;
-    grid: "main main sidebar";
-}
-
-.box p {
-    display: block;
-    margin-bottom: 30px;
+    grid-template-areas: 
+    "main main first";
 }
 
 .information {
     position: relative;
     display: flex;
-    border-radius: 5px;
-    background-color: transparent;
+    background-color: var(--secondaryColor);
     width: 700px;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 0px 0px 50px 50px;
 }
 
 #contact {
@@ -284,14 +279,28 @@ textarea {
 }
 
 .container {
-    grid-area: sidebar;
-    margin-top: 90px;
+    margin: 50px 0px 50px 0px;
+}
+
+.information:nth-child(1) {
+    grid-area: first;
+}
+
+.information:nth-child(2) {
+    grid-area: second;
 }
 
 .map {
-    margin-bottom: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.map iframe {
     display: grid;
     place-items: center;
+    width: 700px;
+    height: 250px;
+    border-radius: 30px;
 }
 
 #send-btn {
@@ -324,29 +333,6 @@ textarea {
     transition: all 0.3 ease;
 }
 
-/* Top button starts */
-
-.topbtn {
-    text-decoration: none;
-    font-size: medium;
-    color: white;
-    background-color: var(--primaryColor);
-    border-radius: 35px;
-    padding: 17px;
-    float: right;
-    text-align: center;
-    border: 0px solid black;
-    font-weight: normal;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    position: fixed;
-    top: 10;
-    bottom: 0;
-    right: 0;
-}
-
-/* Top button ends */
-
 /* whatsapp btn */
 
 .whabtn {
@@ -355,8 +341,8 @@ textarea {
     bottom: 0;
     right: 0;
     width: 50px;
-    margin-right: 10px;
-    margin-bottom: 75px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 /* scrollbar settings */
@@ -381,42 +367,8 @@ textarea {
     background: #555;
 }
 
-/* Footer config starts */
-
-.footer {
-    display: flex;
-    background-color: var(--secondaryColor);
-}
-
-.footer-item-links {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    text-transform: capitalize;
-    background-color: transparent;
-    align-content: center;
-    text-align: left;
-    text-decoration: none;
-    /* border: 2px red solid; */
-}
-
-.footer-item-links a {
-    color: #fff;
-}
-
-.footer div {
-    float: left;
-    margin: 20px 0px 20px 0px;
-    width: 33.33%;
-}
-
-.bottom-links a:hover {
-    text-decoration: underline;
-}
-
 .address {
     color: #fff;
-    margin-bottom: 15px;
 }
 
 #address {
@@ -428,9 +380,9 @@ textarea {
     color: #fff;
 }
 
-.info div {
+/* .info div {
     width: 80%;
-}
+} */
 
 #mail {
     margin-left: 10px;
@@ -446,7 +398,7 @@ textarea {
 .fa {
     font-size: 24px;
     color: #fff;
-    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
 }
 
 
@@ -456,8 +408,12 @@ textarea {
 }
 
 .copyr {
+    z-index: -10;
     width: 100vw;
     background-color: rgb(20, 20, 62);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .copy-text {
@@ -476,6 +432,108 @@ textarea {
 /* Footer config ends */
 
 /* Mobile */
+
+@media screen and (max-width: 1530px) {
+
+    .contact-form {
+        width: 730px;
+        margin: 60px 30px 0px 30px;
+    }
+    
+    .inputBox {
+        width: 300px;
+    }
+
+    textarea {
+        width: 628px;
+        height: 200px;
+    }
+
+    .information {
+        padding: 0px;
+        width: 560px;
+    }
+
+    .map iframe {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .box {
+        grid-template-areas:
+        "main"
+        "sidebar";
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .information {
+        display: block;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-left-radius: 12% 8%;
+        border-top-right-radius: 12% 8%;
+    }
+    
+    #phone {
+        text-align: center;
+    }
+    
+    .info {
+        text-align: center;
+    }
+    
+    .address {
+        text-align: center;
+    }
+    
+    #contact {
+        padding-top: 20px;
+    }
+    
+    .address h3 {
+        margin-top: 30px;
+    }
+    
+    .address p {
+        transform: translateY(-20px);
+        width: 100%;
+    }
+    
+    .map {
+        height: 400px;
+        display: grid;
+        place-items: center;
+        background-color: var(--secondaryColor);
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .map iframe {
+        width: 840px;
+        height: 400px;
+    }
+    
+    .contact-form {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .container {
+        margin: 50px 0px 0px 0px;
+    }
+
+    #send-btn {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 @media screen and (max-width: 858px) {
     body {
@@ -617,27 +675,6 @@ textarea {
         font-size: 25px;
     }
 
-    .footer {
-        width: 100%;
-        display: flex;
-        text-align: left;
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    .footer div {
-        display: grid;
-        grid-template-columns: auto;
-        width: auto;
-        margin-right: auto;
-        margin-left: 20px;
-        margin-bottom: 10px;
-    }
-
-    .info {
-        display: inline;
-    }
-
     #address {
         margin-bottom: 30px;
     }
@@ -652,37 +689,22 @@ textarea {
         width: 225px;
         margin: 15px;
     }
+    
+    .contact-title {
+        margin-top: 120px;
+        letter-spacing: normal;
+    }
+
+    .map iframe {
+        width: 750px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 700px) {
-    .topbtn {
-        font-size: small;
-        padding: 13px;
-        margin-bottom: 15px;
-    }
-
     .whabtn {
         width: 45px;
         margin-bottom: 65px;
-    }
-}
-
-@media screen and (max-width: 858px) {
-    .map {
-        width: 400px;
-        height: 300px;
-        display: grid;
-        place-items: center;
-    }
-    .contact-form {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    .contact-title {
-        margin-top: 150px;
     }
 }
 
@@ -696,10 +718,13 @@ textarea {
     }
 
     textarea {
-        width: 740px;
+        width: 630px;
         height: 180px;
     }
 
+    .map iframe {
+        width: 700px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -723,10 +748,8 @@ textarea {
         width: 525px;
     }
 
-    #send-btn {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+    .map iframe {
+        width: 570px;
     }
 }
 
@@ -750,6 +773,10 @@ textarea {
     textarea {
         width: 425px;
     }
+
+    .map iframe {
+        width: 470px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -772,6 +799,10 @@ textarea {
     textarea {
         width: 375px;
     }
+
+    .map iframe {
+        width: 420px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -793,5 +824,9 @@ textarea {
 
     textarea {
         width: 325px;
+    }
+    
+    .map  iframe{
+        width: 370px;
     }
 }
