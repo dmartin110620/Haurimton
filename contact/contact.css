@@ -240,6 +240,7 @@ li {
 
 textarea {
     width: 787px;
+    height: 250px;
     margin: 10px 0 30px 0;
     resize: none;
     padding: 10px;
@@ -432,32 +433,6 @@ textarea {
 /* Footer config ends */
 
 /* Mobile */
-
-@media screen and (min-width: 1530px) {
-
-    .contact-form {
-        width: 730px;
-        margin: 60px 30px 0px 30px;
-    }
-
-    .inputBox {
-        width: 300px;
-    }
-
-    textarea {
-        width: 628px;
-        height: 200px;
-    }
-
-    .information {
-        padding: 0px;
-        width: 560px;
-    }
-
-    .map iframe {
-        width: 550px;
-    }
-}
 
 @media screen and (max-width: 1530px) {
 
