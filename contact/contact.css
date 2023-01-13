@@ -569,7 +569,7 @@ textarea {
         place-items: center;
         background-color: var(--secondaryColor);
         margin-bottom: 0px;
-        margin-top: -20px;
+        margin-top: -25px;
     }
 
     .map iframe {
