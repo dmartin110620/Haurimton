@@ -570,6 +570,7 @@ li {
 
     .nav-item {
         margin: 45px 0;
+        font-weight: 600;
     }
 
     .navmenu.active {
