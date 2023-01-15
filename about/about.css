@@ -610,3 +610,27 @@ li {
     }
     
 }
+
+@media screen and (max-height: 630px) {
+    .nav-item {
+        margin: 36px 0px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .nav-item {
+        margin: 26px 0px;
+    }
+}
+
+@media screen and (max-height: 430px) {
+    .nav-item {
+        margin: 16px 0px;
+    }
+}
+
+@media screen and (min-height: 730px) {
+    .nav-item {
+        margin: 55px 0px;
+    }
+}
