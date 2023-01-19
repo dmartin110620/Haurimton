@@ -256,8 +256,9 @@ li {
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     background-color: #fff;
+    opacity: 0.9;
     position: fixed;
     top: 0;
     left: 0;
@@ -402,14 +403,17 @@ li {
 
 .address {
     color: #fff;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+}
+
+.address p {
+    margin: 0 0 0 10px;
 }
 
 #address {
     margin-left: 10px;
     margin-top: 15px;
     width: 85%;
-    /* border: 2px red solid; */
 }
 
 .info {
@@ -423,14 +427,12 @@ li {
 #mail {
     margin-left: 10px;
     margin-top: 20px;
-    /* border: 2px red solid; */
 }
 
 #phone {
     margin-left: 10px;
     width: 80%;
     text-align: left;
-    /* border: 2px red solid; */
 }
 
 .fa {
@@ -603,8 +605,8 @@ li {
         text-decoration: underline;
     }
 
-    .caption-text a {
-        font-size: 25px;
+    .bottom-links a {
+        padding-left: 0px;
     }
 
     .footer {
@@ -676,31 +678,25 @@ li {
     }
 }
 
-@media screen and (min-width: 1680px) {
-    .slider-img {
-        height: 600px;
-    }
-}
-
-@media screen and (max-height: 630px) {
+@media screen and (max-height: 630px) and (max-width: 858px) {
     .nav-item {
         margin: 36px 0px;
     }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 500px) and (max-width: 858px) {
     .nav-item {
         margin: 26px 0px;
     }
 }
 
-@media screen and (max-height: 430px) {
+@media screen and (max-height: 430px) and (max-width: 858px) {
     .nav-item {
         margin: 16px 0px;
     }
 }
 
-@media screen and (min-height: 730px) {
+@media screen and (min-height: 730px) and (max-width: 858px) {
     .nav-item {
         margin: 55px 0px;
     }

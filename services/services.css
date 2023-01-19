@@ -655,25 +655,25 @@ li {
     }
 }
 
-@media screen and (max-height: 630px) {
+@media screen and (max-height: 630px) and (max-width: 858px) {
     .nav-item {
         margin: 36px 0px;
     }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 500px) and (max-width: 858px) {
     .nav-item {
         margin: 26px 0px;
     }
 }
 
-@media screen and (max-height: 430px) {
+@media screen and (max-height: 430px) and (max-width: 858px) {
     .nav-item {
         margin: 16px 0px;
     }
 }
 
-@media screen and (min-height: 730px) {
+@media screen and (min-height: 730px) and (max-width: 858px) {
     .nav-item {
         margin: 55px 0px;
     }
