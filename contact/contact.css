@@ -786,8 +786,9 @@ textarea {
         text-decoration: underline;
     }
 
-    .caption-text a {
-        font-size: 25px;
+    .whabtn {
+        width: 45px;
+        margin-bottom: 65px;
     }
 
     #address {
@@ -843,11 +844,6 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
-    .whabtn {
-        width: 45px;
-        margin-bottom: 15px;
-    }
-
     .contact-form {
         width: 625px;
     }

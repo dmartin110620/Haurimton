@@ -588,6 +588,17 @@ li {
         margin-bottom: 10px;
     }
 
+    .topbtn {
+        font-size: small;
+        padding: 13px;
+        margin-bottom: 15px;
+    }
+
+    .whabtn {
+        width: 45px;
+        margin-bottom: 65px;
+    }
+
     .info {
         display: inline;
     }
@@ -628,19 +639,6 @@ li {
     .mision-vision h2 {
         display: grid;
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .topbtn {
-        font-size: small;
-        padding: 13px;
-        margin-bottom: 15px;
-    }
-
-    .whabtn {
-        width: 45px;
-        margin-bottom: 65px;
     }
 }
 

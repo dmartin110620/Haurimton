@@ -470,10 +470,6 @@ li {
         text-decoration: underline;
     }
 
-    .caption-text a {
-        font-size: 25px;
-    }
-
     .footer {
         width: 100%;
         display: flex;
@@ -489,6 +485,17 @@ li {
         margin-right: auto;
         margin-left: 20px;
         margin-bottom: 10px;
+    }
+
+    .topbtn {
+        font-size: small;
+        padding: 13px;
+        margin-bottom: 15px;
+    }
+
+    .whabtn {
+        width: 45px;
+        margin-bottom: 65px;
     }
 
     .info {
@@ -511,18 +518,6 @@ li {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .topbtn {
-        font-size: small;
-        padding: 13px;
-        margin-bottom: 15px;
-    }
-
-    .whabtn {
-        width: 45px;
-        margin-bottom: 65px;
-    }
-}
 
 @media screen and (max-height: 630px) and (max-width: 858px) {
     .nav-item {

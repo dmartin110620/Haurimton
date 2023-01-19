@@ -626,6 +626,17 @@ li {
         margin-bottom: 10px;
     }
 
+    .topbtn {
+        font-size: small;
+        padding: 13px;
+        margin-bottom: 15px;
+    }
+
+    .whabtn {
+        width: 45px;
+        margin-bottom: 65px;
+    }
+
     .info {
         display: inline;
     }
@@ -657,19 +668,6 @@ li {
     .caption-text a {
         font-size: 35px; /* Conoce más - slider */
         bottom: 40%;
-    }
-}
-
-@media screen and (max-width: 700px) or (max-height: 500px) {
-    .topbtn {
-        font-size: small;
-        padding: 13px;
-        margin-bottom: 15px;
-    }
-
-    .whabtn {
-        width: 45px;
-        margin-bottom: 65px;
     }
 }
 
