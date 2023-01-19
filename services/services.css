@@ -309,7 +309,8 @@ li {
 
 /* Top button starts */
 
-.topbtn {
+#topbtn {
+    visibility: hidden;
     text-decoration: none;
     font-size: medium;
     color: white;
@@ -332,14 +333,14 @@ li {
 
 /* whatsapp btn */
 
-.whabtn {
+#whabtn {
     position: fixed;
     top: 10;
     bottom: 0;
     right: 0;
     width: 50px;
     margin-right: 10px;
-    margin-bottom: 75px;
+    margin-bottom: 10px;
 }
 
 /* scrollbar settings */
@@ -622,13 +623,13 @@ li {
         margin-bottom: 10px;
     }
     
-    .topbtn {
+    #topbtn {
         font-size: small;
         padding: 13px;
         margin-bottom: 15px;
     }
 
-    .whabtn {
+    #whabtn {
         width: 45px;
         margin-bottom: 65px;
     }

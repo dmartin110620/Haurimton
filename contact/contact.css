@@ -336,9 +336,33 @@ textarea {
     transition: all 0.3 ease;
 }
 
+/* Top button starts */
+
+#topbtn {
+    visibility: hidden;
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    background-color: var(--primaryColor);
+    border-radius: 35px;
+    padding: 17px;
+    float: right;
+    text-align: center;
+    border: 0px solid black;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 10;
+    bottom: 0;
+    right: 0;
+}
+
+/* Top button ends */
+
 /* whatsapp btn */
 
-.whabtn {
+#whabtn {
     position: fixed;
     top: 10;
     bottom: 0;
@@ -786,7 +810,13 @@ textarea {
         text-decoration: underline;
     }
 
-    .whabtn {
+    #topbtn {
+        font-size: small;
+        padding: 13px;
+        margin-bottom: 15px;
+    }
+
+    #whabtn {
         width: 45px;
         margin-bottom: 65px;
     }
