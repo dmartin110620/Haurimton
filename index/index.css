@@ -106,7 +106,7 @@ li {
     font-size: 40px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 45%;
+    bottom: 44%;
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -258,7 +258,7 @@ li {
     padding: 20px;
     /* color: whitesmoke; */
     background-color: #fff;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     position: fixed;
     top: 0;
     left: 0;
@@ -653,9 +653,14 @@ li {
     .slider-img {
         height: 320px;
     }
+
+    .caption-text a {
+        font-size: 35px; /* Conoce más - slider */
+        bottom: 40%;
+    }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) or (max-height: 500px) {
     .topbtn {
         font-size: small;
         padding: 13px;
@@ -675,6 +680,11 @@ li {
 
     .slider-img {
         height: 270px;
+    }
+
+    .caption-text a {
+        font-size: 22px;
+        bottom: 41%;
     }
 }
 
