@@ -125,13 +125,13 @@ li {
 .navbar {
     min-height: 60px;
     align-items: center;
-    /* top: 0;
-    left: 0; */
+    top: 0;
+    left: 0;
     /* display: flex; */
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     background-color: #fff;
     /* opacity: 0.9; */
     position: fixed;
