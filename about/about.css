@@ -34,7 +34,8 @@ html {
 
 body {
     text-align: justify;
-    background: url(../images/fondo.png);
+    /* background: url(../images/fondo.png); */
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -161,6 +162,27 @@ li {
 
 /* page css start*/
 
+html.dark-mode {
+    filter: invert(100%);
+}
+
+html.dark-mode img {
+    filter: invert(100%);
+}
+
+html.dark-mode footer{
+    filter: invert(100%);
+}
+
+html.dark-mode .bar{
+    background-color: #f1f1f1;
+    filter: invert(100%);
+}
+
+html.dark-mode .navbar {
+    filter: invert(100%);
+    background-color: var(--secondaryColor);
+}
 
 
 .about-text {
@@ -250,6 +272,7 @@ li {
     top: 10;
     bottom: 0;
     right: 0;
+    z-index: 1000;
 }
 
 /* Top button ends */
@@ -264,6 +287,7 @@ li {
     width: 50px;
     margin-right: 10px;
     margin-bottom: 10px;
+    z-index: 1000;
 }
 
 /* scrollbar settings */
@@ -517,7 +541,7 @@ li {
     .navmenu {
         position: fixed;
         left: 0px;
-        top: -100%;
+        top: -200%;
         gap: 0;
         flex-direction: column;
         background-color: #fff;
